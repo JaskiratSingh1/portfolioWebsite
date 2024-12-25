@@ -60,17 +60,22 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Jaskirat Singh.</h2>;
+  const two = (
+    <h2 className="big-heading">
+      Jaskirat Singh <span>{'{Jazz}'}</span>.{' '}
+    </h2>
+  );
   const three = <h3 className="big-heading">I build things 💻.</h3>;
   // TODO: Add AI related link
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building full stack applications. Currently, I’m focused on developing seamless {' '} 
+        I’m a software engineer specializing in building full stack applications. Currently, I’m
+        focused on developing seamless{' '}
         <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
           LLM integrations ✨
-        </a>
-        {' '}into existing solutions.
+        </a>{' '}
+        into existing solutions.
       </p>
     </>
   );
