@@ -125,7 +125,14 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    '🐍 Python (Pandas, NumPy, scikit-learn)',
+    '☕️ Java',
+    '🔧 C++',
+    '⚛️ React (Grommet, Material-UI, Gatsby)',
+    '🛠️ Node.js',
+    '📱 SwiftUI',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,30 +142,22 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! I am Jazz, and I’m passionate about building fun AI based solutions to everyday
+              problems! My journey in engineering began during my undergraduate studies in
+              Electrical Nano-Engineering, where I developed a strong foundation in embedded systems
+              and software development.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              Fast-forward to today, I’m pursuing a Master’s in Software Engineering while
+              leveraging my skills in full-stack development, cloud computing, and machine learning.
             </p>
 
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              Recently, I’ve led projects like a custom resume generator powered by ChatGPT and a
+              movie theater reservation web app, using modern web frameworks and adhering to
+              industry-standard practices. My focus remains on creating accessible, scalable, and
+              user-friendly applications that make an impact.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
