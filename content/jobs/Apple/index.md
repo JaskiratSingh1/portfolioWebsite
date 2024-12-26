@@ -1,13 +1,13 @@
 ---
 date: '2017-12-21'
-title: 'UI Engineer Co-op'
+title: 'Specialist'
 company: 'Apple'
-location: 'Cupertino, CA'
-range: 'July - December 2017'
-url: 'https://www.apple.com/music/'
+location: 'Edmonton, Alberta'
+range: 'September 2019 - January 2020'
+url: 'https://www.apple.com/ca/'
 ---
 
-- Developed and styled interactive web applications for Apple Music using Ember and SCSS
-- Built and shipped the Apple Music Extension for Facebook Messenger leveraging third-party and internal API integrations
-- Architected and implemented the user interface of Apple Music's embeddable web player widget for in-browser user authorization and full song playback
-- Contributed extensively to the creation of MusicKit JS, a public-facing JavaScript SDK for embedding Apple Music players into web applications
+- Built strong communication and management skills by working collaboratively in a team environment.
+- Developed personalized solutions to address and fulfill customer needs, enhancing their experience with Apple products and services.
+- Provided tailored recommendations for hardware and software, ensuring customer satisfaction and retention.
+- Assisted in troubleshooting technical issues, delivering seamless support for Apple devices and ecosystems.

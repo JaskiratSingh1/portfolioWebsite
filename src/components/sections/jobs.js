@@ -32,14 +32,15 @@ const StyledTabList = styled.div`
   margin: 0;
   list-style: none;
 
+  /* On smaller screens, let the tabs stack vertically */
   @media (max-width: 600px) {
     display: flex;
-    overflow-x: auto;
-    width: calc(100% + 100px);
-    padding-left: 50px;
-    margin-left: -50px;
-    margin-bottom: 30px;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
+
   @media (max-width: 480px) {
     width: calc(100% + 50px);
     padding-left: 25px;
@@ -84,9 +85,12 @@ const StyledTabButton = styled.button`
   @media (max-width: 768px) {
     padding: 0 15px 2px;
   }
+
   @media (max-width: 600px) {
+    /* Center content, remove forced min-width, allow wrapping */
     ${({ theme }) => theme.mixins.flexCenter};
-    min-width: 120px;
+    min-width: auto;
+    white-space: normal;
     padding: 0 15px;
     border-left: 0;
     border-bottom: 2px solid var(--lightest-navy);
@@ -113,16 +117,18 @@ const StyledHighlight = styled.div`
   transition-delay: 0.1s;
 
   @media (max-width: 600px) {
-    top: auto;
-    bottom: 0;
-    width: 100%;
-    max-width: var(--tab-width);
-    height: 2px;
-    margin-left: 50px;
-    transform: translateX(calc(${({ activeTabId }) => activeTabId} * var(--tab-width)));
+    /* For vertical stacking, keep it on the left and transform vertically. */
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: var(--tab-height);
+    margin-left: 0;
+    transform: translateY(calc(${({ activeTabId }) => activeTabId} * var(--tab-height)));
   }
+
   @media (max-width: 480px) {
-    margin-left: 25px;
+    /* Remove or adjust if needed, or leave it at 0 for a perfect left alignment. */
+    margin-left: 0;
   }
 `;
 
@@ -199,9 +205,8 @@ const Jobs = () => {
     if (prefersReducedMotion) {
       return;
     }
-
     sr.reveal(revealContainer.current, srConfig());
-  }, []);
+  }, [prefersReducedMotion]);
 
   const focusTab = () => {
     if (tabs.current[tabFocus]) {
@@ -218,10 +223,10 @@ const Jobs = () => {
     }
   };
 
-  // Only re-run the effect if tabFocus changes
-  useEffect(() => focusTab(), [tabFocus]);
+  useEffect(() => {
+    focusTab();
+  }, [tabFocus]);
 
-  // Focus on tabs when using up & down arrow keys
   const onKeyDown = e => {
     switch (e.key) {
       case KEY_CODES.ARROW_UP: {
@@ -229,13 +234,11 @@ const Jobs = () => {
         setTabFocus(tabFocus - 1);
         break;
       }
-
       case KEY_CODES.ARROW_DOWN: {
         e.preventDefault();
         setTabFocus(tabFocus + 1);
         break;
       }
-
       default: {
         break;
       }
@@ -247,7 +250,7 @@ const Jobs = () => {
       <h2 className="numbered-heading">Where I’ve Worked</h2>
 
       <div className="inner">
-        <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
+        <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={onKeyDown}>
           {jobsData &&
             jobsData.map(({ node }, i) => {
               const { company } = node.frontmatter;
@@ -293,9 +296,7 @@ const Jobs = () => {
                         </a>
                       </span>
                     </h3>
-
                     <p className="range">{range}</p>
-
                     <div dangerouslySetInnerHTML={{ __html: html }} />
                   </StyledTabPanel>
                 </CSSTransition>
