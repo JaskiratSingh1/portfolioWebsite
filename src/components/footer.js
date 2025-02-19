@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Icon } from '@components/icons';
@@ -69,24 +69,12 @@ const StyledCredit = styled.div`
 `;
 
 const Footer = () => {
-  const [githubInfo, setGitHubInfo] = useState({
-    stars: null,
-    forks: null,
-  });
-
   useEffect(() => {
     if (process.env.NODE_ENV !== 'production') {
       return;
     }
     fetch('https://api.github.com/repos/JaskiratSingh1/portfolioWebsite')
       .then(response => response.json())
-      .then(json => {
-        const { stargazers_count, forks_count } = json;
-        setGitHubInfo({
-          stars: stargazers_count,
-          forks: forks_count,
-        });
-      })
       .catch(e => console.error(e));
   }, []);
 
@@ -108,19 +96,6 @@ const Footer = () => {
       <StyledCredit tabindex="-1">
         <a href="https://github.com/JaskiratSingh1">
           <div>Built by Jaskirat Singh </div>
-
-          {(githubInfo.stars > 0 || githubInfo.forks > 0) && (
-            <div className="github-stats">
-              <span>
-                <Icon name="Star" />
-                <span>{githubInfo.stars.toLocaleString()}</span>
-              </span>
-              <span>
-                <Icon name="Fork" />
-                <span>{githubInfo.forks.toLocaleString()}</span>
-              </span>
-            </div>
-          )}
         </a>
         <div>
           With help from<a href="https://brittanychiang.com/">Brittany</a>
