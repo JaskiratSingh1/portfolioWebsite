@@ -72,7 +72,7 @@ const Hero = () => {
       <p>
         I’m a software engineer specializing in building full stack applications. Currently, I’m
         focused on developing seamless{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
+        <a href="https://vitalityworkouts.com" target="_blank" rel="noreferrer">
           LLM integrations ✨
         </a>{' '}
         into existing solutions.
@@ -81,12 +81,8 @@ const Hero = () => {
   );
   // TODO: Update this with something cool
   const five = (
-    <a
-      className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
-      target="_blank"
-      rel="noreferrer">
-      Check out my [insert cool thing]!
+    <a className="email-link" href="https://vitalityworkouts.com" target="_blank" rel="noreferrer">
+      Check out my upcoming app Vitality!
     </a>
   );
 
