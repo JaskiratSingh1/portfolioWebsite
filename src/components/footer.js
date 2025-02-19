@@ -109,7 +109,7 @@ const Footer = () => {
         <a href="https://github.com/JaskiratSingh1">
           <div>Built by Jaskirat Singh </div>
 
-          {githubInfo.stars && githubInfo.forks && (
+          {(githubInfo.stars > 0 || githubInfo.forks > 0) && (
             <div className="github-stats">
               <span>
                 <Icon name="Star" />
