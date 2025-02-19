@@ -45,6 +45,7 @@ const StyledCredit = styled.div`
   font-family: var(--font-mono);
   font-size: var(--fz-xxs);
   line-height: 1;
+  text-align: right;
 
   a {
     padding: 10px;
@@ -106,10 +107,7 @@ const Footer = () => {
 
       <StyledCredit tabindex="-1">
         <a href="https://github.com/JaskiratSingh1">
-          <div>Built by Jaskirat Singh</div>
-          <div>
-            With help from<a href="https://brittanychiang.com/">Brittany</a>
-          </div>
+          <div>Built by Jaskirat Singh </div>
 
           {githubInfo.stars && githubInfo.forks && (
             <div className="github-stats">
@@ -124,6 +122,9 @@ const Footer = () => {
             </div>
           )}
         </a>
+        <div>
+          With help from<a href="https://brittanychiang.com/">Brittany</a>
+        </div>
       </StyledCredit>
     </StyledFooter>
   );
