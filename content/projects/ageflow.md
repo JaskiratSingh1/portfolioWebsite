@@ -17,7 +17,4 @@ showInProjects: true
 ### Features
 
 - **Real‐Time Age Tracking** – Watch your age tick by with up to 8 decimal places of precision.
-- **Dynamic Gradient Backgrounds** – Enjoy a soothing animated gradient that evolves over time.
 - **Lock Screen Widget** – Keep an eye on your age at a glance (iOS 16+).
-- **Light and Dark Mode** – Style adjusts automatically or matches your system preference.
-- **Privacy First** – Your birth date is stored securely on‐device; no personal data is shared.
