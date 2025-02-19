@@ -1,87 +1,30 @@
-<div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/bchiang7/v4/main/src/images/logo.png" width="100" />
-</div>
-<h1 align="center">
-  brittanychiang.com - v4
-</h1>
-<p align="center">
-  The fourth iteration of <a href="https://brittanychiang.com" target="_blank">brittanychiang.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
-</p>
-<p align="center">
-  Previous iterations:
-  <a href="https://github.com/bchiang7/v1" target="_blank">v1</a>,
-  <a href="https://github.com/bchiang7/v2" target="_blank">v2</a>,
-  <a href="https://github.com/bchiang7/bchiang7.github.io" target="_blank">v3</a>
-</p>
-<p align="center">
-  <a href="https://app.netlify.com/sites/brittanychiang/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status" />
-  </a>
-</p>
+# Welcome to My Webpage
 
-![demo](https://raw.githubusercontent.com/bchiang7/v4/main/src/images/demo.png)
+Hello and welcome! This is my personal space on the web, where you can find everything about me—from my latest projects and professional journey to my interests and ideas. I’m thrilled you stopped by.
 
-## 🚨 Forking this repo (please read!)
+## About Me
 
-Many people have contacted me asking me if they can use this code for their own website, and the answer to that question is usually **yes, with attribution**.
+Hi, I’m **Jazz**. I’m a passionate developer who loves creating innovative solutions and sharing my work with the world. Whether it’s full-stack development, mobile app creation, or diving into new technologies, I’m always exploring and learning.
 
-I value keeping my site open source, but as you all know, _**plagiarism is bad**_. It's always disheartening whenever I find that someone has copied my site without giving me credit. I spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own.
+## What You’ll Find Here
 
-Please also note that I did not build this site with the intention of it being a starter theme, so if you have questions about implementation, please refer to the [Gatsby docs](https://www.gatsbyjs.org/docs/).
+- **Projects:** A showcase of my work, including apps, websites, and other cool projects I’ve built.
+- **Resume:** A detailed look at my professional experience and skill set.
+- **Contact:** Ways to get in touch with me for collaborations, job opportunities, or just to say hello!
 
-### TL;DR
+## Technologies & Tools
 
-Yes, you can fork this repo. Please give me proper credit by linking back to [brittanychiang.com](https://brittanychiang.com). Thanks!
+I work with a variety of modern tools and frameworks, including:
 
-## 🛠 Installation & Set Up
+- **Frontend:** React, Vue, and more.
+- **Backend:** Node.js, Express, and other server-side technologies.
+- **Mobile:** Swift, React Native, etc.
+- **Other Tools:** Git, Docker, and continuous integration/deployment systems.
 
-1. Install the Gatsby CLI
+## Get in Touch
 
-   ```sh
-   npm install -g gatsby-cli
-   ```
+I love connecting with new people and exploring opportunities to collaborate. Feel free to drop me a message via jsingh9@ualberta.ca or connect with me on [LinkedIn](https://www.linkedin.com/in/jazz17/). I’m always excited to chat about ideas and projects.
 
-2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
+---
 
-   ```sh
-   nvm install
-   ```
-
-3. Install dependencies
-
-   ```sh
-   yarn
-   ```
-
-4. Start the development server
-
-   ```sh
-   npm start
-   ```
-
-## 🚀 Building and Running for Production
-
-1. Generate a full static production build
-
-   ```sh
-   npm run build
-   ```
-
-1. Preview the site as it will appear once deployed
-
-   ```sh
-   npm run serve
-   ```
-
-## 🎨 Color Reference
-
-| Color          | Hex                                                                |
-| -------------- | ------------------------------------------------------------------ |
-| Navy           | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) `#0a192f` |
-| Light Navy     | ![#112240](https://via.placeholder.com/10/0a192f?text=+) `#112240` |
-| Lightest Navy  | ![#233554](https://via.placeholder.com/10/303C55?text=+) `#233554` |
-| Slate          | ![#8892b0](https://via.placeholder.com/10/8892b0?text=+) `#8892b0` |
-| Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
-| Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
-| White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
-| Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
+Thank you for visiting my webpage. I hope you enjoy exploring and learning more about me!

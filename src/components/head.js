@@ -53,9 +53,6 @@ const Head = ({ title, description, image }) => {
       <meta name="linkedIn:title" content={seo.title} />
       <meta name="linkedIn:description" content={seo.description} />
       <meta name="linkedIn:image" content={seo.image} />
-
-      {/* TODO: Update Google Site Verification */}
-      <meta name="google-site-verification" content="DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk" />
     </Helmet>
   );
 };
