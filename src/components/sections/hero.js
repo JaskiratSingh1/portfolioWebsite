@@ -71,18 +71,18 @@ const Hero = () => {
     <>
       <p>
         I’m a software engineer specializing in building full stack applications. Currently, I’m
-        focused on developing seamless{' '}
-        <a href="https://vitalityworkouts.com" target="_blank" rel="noreferrer">
-          LLM integrations ✨
-        </a>{' '}
-        into existing solutions.
+        focused on developing iOS applications.
       </p>
     </>
   );
   // TODO: Update this with something cool
   const five = (
-    <a className="email-link" href="https://vitalityworkouts.com" target="_blank" rel="noreferrer">
-      Check out my upcoming app Vitality!
+    <a
+      className="email-link"
+      href="https://apps.apple.com/us/developer/jaskirat-singh/id1789238796"
+      target="_blank"
+      rel="noreferrer">
+      iOS Apps
     </a>
   );
 

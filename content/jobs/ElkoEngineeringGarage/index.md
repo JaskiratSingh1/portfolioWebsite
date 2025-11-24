@@ -7,5 +7,6 @@ range: 'April 2022 - August 2022'
 url: 'https://confluence.garage.ualberta.ca/'
 ---
 
-- Built 10+ educational software scripts, streamlining workflows and increasing engineering tool efficiency by 25%, enabling teams to focus on higher-value tasks.
-- Led training sessions and conducted thorough code reviews, fostering a culture of high-quality development practices and ensuring consistent code standards across the team.
+- Designed and assembled custom PCBs and completed soldering work for instructional and prototype hardware projects.
+- Operated the desktop mill and other fabrication tools to support prototyping and hardware builds.
+- Created clear Standard Operating Procedures (SOPs) to document lab workflows and equipment usage for future instructors and students.
